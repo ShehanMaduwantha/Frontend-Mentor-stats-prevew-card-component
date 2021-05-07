@@ -1,4 +1,84 @@
 .card-container {
+  position: absolute;
   width: 69.37rem;
-  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: $card-background;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .card-content {
+    &-side {
+      width: 24.625rem;
+    }
+
+    &-title {
+      margin-left: 4.5rem;
+      color: $main-heading;
+      margin-top: 4.875rem;
+      font-size: 1.9rem;
+      font-family: "Inter";
+
+      .text-highlight {
+        color: $accent-color;
+      }
+    }
+
+    &-text {
+      margin-left: 4.5rem;
+      color: $main-paragraph;
+      margin-top: 2.5rem;
+      font-family: "Lexend Deca";
+      font-size: 0.812rem;
+      line-height: 1.3rem;
+    }
+
+    &-stats {
+      margin-left: 4.5rem;
+      margin-top: 5rem;
+      color: $stat-heading;
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        font-size: 1.25;
+        color: $main-heading;
+        font-family: Inter;
+        font-weight: 700;
+
+        .stat-text {
+          display: block;
+          font-weight: 400;
+          color: $main-paragraph;
+          text-transform: uppercase;
+          font-family: "Lexend Deca";
+          font-size: 0.562rem;
+          margin-top: 0.3rem;
+        }
+      }
+    }
+  }
+
+  .card-image {
+    width: 33.75rem;
+    height: 27.875rem;
+    background-color: white;
+    background-image: url("/images/image-header-desktop.jpg");
+    position: relative;
+    filter: contrast(1.7) brightness(0.6);
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $accent-color;
+      opacity: 0.6;
+    }
+  }
 }
