@@ -1,8 +1,11 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,AAAA,CAAC,CAAC;EACA,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACX",
     "sources": [
-        "style.scss"
+        "style.scss",
+        "_global.scss",
+        "_variables.scss",
+        "_card.scss"
     ],
     "names": [],
     "file": "style.css"
