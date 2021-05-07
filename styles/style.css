@@ -141,6 +141,10 @@ body {
     height: 15rem;
     background-size: contain;
   }
+  .attribution {
+    position: relative;
+    top: 1rem;
+  }
 }
 
 .attribution {
