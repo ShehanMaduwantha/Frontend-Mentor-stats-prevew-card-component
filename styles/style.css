@@ -100,4 +100,59 @@ body {
   background-color: #aa5cdb;
   opacity: 0.6;
 }
+
+@media screen and (max-width: 23.43rem) {
+  .card-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 20.43rem;
+    position: relative;
+    -webkit-transform: translate(-50%, 10%);
+            transform: translate(-50%, 10%);
+  }
+  .card-container .card-content-side {
+    width: 100%;
+  }
+  .card-container .card-content-title {
+    margin: 2.75rem 2.187rem 1.687rem 2.187rem;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .card-container .card-content-text {
+    margin: 0 2.187rem 3.25rem 2.187rem;
+    text-align: center;
+    font-size: 0.86rem;
+  }
+  .card-container .card-content-stats {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 0 0;
+  }
+  .card-container .card-content-stats div .stat-text {
+    margin-bottom: 2.312rem;
+  }
+  .card-container .card-image {
+    height: 15rem;
+    background-size: contain;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  font-family: Inter;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.attribution a {
+  color: #aa5cdb;
+}
 /*# sourceMappingURL=style.css.map */
